@@ -15,8 +15,9 @@ meta$patient <- gsub("_.*", "", colnames(data)[-1])
 levels(meta$celltype) <- c(' ', 'Tumor', 'B cell', 'Dendritic', 'Endothelial', 'Fibroblast', 
                            'Macrophage', 'Mast', 'Myocyte', 'T cell')
 ## --- T cell subtypes have been added later, by classifying a separate T cell seurat -- ##
-Tcellsubtypes <- readRDS("HeadNeck_T_cell_subtypes.rds")
-meta$celltype[names(Tcellsubtypes)] <- Tcellsubtypes
+## Add them by:
+## headneck_ct <- readRDS(paste0(data.dir, "Headneck_celltypes.rds"))
+## meta$celltype <- headneck_ct
 
 ## Delete duplicated rownames
 data <- data[-c(1:5), ]

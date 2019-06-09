@@ -19,13 +19,17 @@ inputm <- as.matrix(muraro@raw.data)
 inputb <- as.matrix(baron@raw.data)
 inputm <- t(t(inputm)/colSums(inputm) * 10000)
 inputb <- t(t(inputb)/colSums(inputb) * 10000)
+## Remove ribosomal:
+ribo <- read.table(paste0(data.dir, "ribosomal.txt"), header=F, sep = '\t')
+inputb <- inputb[!rownames(inputb) %in% ribo[,1], ]
+inputm <- inputm[!rownames(inputm) %in% ribo[,1], ]
 
 ## Select cells
 mcelt <- mcelt[colnames(muraro@raw.data)]
 mcelt[mcelt == 'mesenchymal'] <- 'activated stellate'
 bcelt[bcelt == 'activated_stellate'] <- 'activated stellate'
 bcelt[bcelt == 'quiescent_stellate'] <-'quiescent stellate'
-mcelt <- mcelt[mcelt != c('unclear')] ## unclassified
+mcelt <- mcelt[mcelt != c('unclear')] ## throw away unclassified
 inputm <- inputm[ ,names(mcelt)]
 mcelt[mcelt == 'pp'] <- 'gamma' ## for comparability
 bcel <- bcelt
@@ -70,9 +74,9 @@ M_class <- PlotTSNE(cm$classification, tsnem, col = colors) +
 M_score <- PlotTSNE(cm$prof_scores[[7]][ ,'duct'], tsnem, col = gradient_c1, limits = range(cm$prof_scores[[7]][ ,'duct'])*1.02) +
   labs(color='Profile score')
 M_tree <- PlotTree(cm, col = colors, plot_limits = c(-0.25, 0.05)) + ggtitle('')
-ggsave(plot=M_class, file = paste0(output.dir, 'Pancreas_clas.pdf'), height = 6, width = 8.5)
-ggsave(plot=M_score, file = paste0(output.dir, 'Pancreas_score.pdf'), height = 6, width = 8.1) ## different dimensions for different legends
-ggsave(plot=M_tree, file = paste0(output.dir, 'P1_tree.pdf'), height = 10, width = 10)
+ggsave(plot=M_class, file = paste0(output.dir, 'Figure4A.pdf'), height = 6, width = 8.5)
+ggsave(plot=M_score, file = paste0(output.dir, 'Figure4C.pdf'), height = 6, width = 8.1)
+ggsave(plot=M_tree, file = paste0(output.dir, 'Figure4B.pdf'), height = 10, width = 10)
 
 ## -------------------------------------------- Heatmap
 gradient_c2 <- c(gplots::colorpanel(n = 20, low = '#120f70', mid = '#56a5e2', high = '#f8ffba'),
@@ -102,11 +106,11 @@ M_scoresilh <- ggplot(dat, aes(x = cell, y = score)) + geom_area(fill = 'black')
         axis.title = element_blank(),
         axis.ticks = element_blank())
 
-ggsave(plot=M_scoresilh, file = paste0(output.dir, 'Pancreas1_silh.pdf'), height = 0.7, width = 8.5)
+ggsave(plot=M_scoresilh, file = paste0(output.dir, 'Figure4D_silh.pdf'), height = 0.7, width = 8.5)
 
 ## Heatmap
 dev.off()
-pdf(file = paste0(output.dir, 'Heatmap_P1.pdf'), width = 9.84252, height = 7.086)
+pdf(file = paste0(output.dir, 'Figure4D.pdf'), width = 9.84252, height = 7.086)
 library(SDMTools)
 heatmap(as.matrix(data2), Rowv = NA, Colv = NA, col = gradient_c2,
         labCol = NA)
@@ -125,9 +129,9 @@ B_class <- PlotTSNE(cb$classification, tsneb, col = colors) +
 B_score <- PlotTSNE(cb$prof_scores[[6]][ ,'duct'], tsneb, col = gradient_c1, limits = range(cb$prof_scores[[6]][ ,'duct'])*1.02) +
   labs(color='Profile score')
 B_tree <- PlotTree(cb, col = colors, plot_limits = c(-0.25, 0.08)) + ggtitle('')
-ggsave(plot=B_class, file = paste0(output.dir, 'Pancreas2_clas.pdf'), height = 6, width = 8.5)
-ggsave(plot=B_score, file = paste0(output.dir, 'Pancreas2_score.pdf'), height = 6, width = 8.1)
-ggsave(plot=B_tree, file = paste0(output.dir, 'P2_tree.pdf'), height = 8, width = 10)
+ggsave(plot=B_class, file = paste0(output.dir, 'FigureS8A.pdf'), height = 6, width = 8.5)
+ggsave(plot=B_score, file = paste0(output.dir, 'FigureS8C.pdf'), height = 6, width = 8.1)
+ggsave(plot=B_tree, file = paste0(output.dir, 'FigureS8B.pdf'), height = 8, width = 10)
 
 ## ------------------------------------------------ Heatmap
 ## Select the genes that correlate highly w confidence score
@@ -154,11 +158,11 @@ B_scoresilh <- ggplot(dat, aes(x = cell, y = score)) + geom_area(fill = 'black')
         axis.title = element_blank(),
         axis.ticks = element_blank())
 
-ggsave(plot=B_scoresilh, file = paste0(output.dir, 'Pancreas2_silh.pdf'), height = 0.7, width = 8.5)
+ggsave(plot=B_scoresilh, file = paste0(output.dir, 'FigureS8D_silh.pdf'), height = 0.7, width = 8.5)
 
 ## Heatmap
 dev.off()
-pdf(file = paste0(output.dir, 'Heatmap_P2.pdf'), width = 9.84252, height = 7.086)
+pdf(file = paste0(output.dir, 'FigureS8D.pdf'), width = 9.84252, height = 7.086)
 library(SDMTools)
 heatmap(as.matrix(data2), Rowv = NA, Colv = NA, col = gradient_c2,
         labCol = NA)
@@ -170,7 +174,7 @@ legend.gradient(pnts,
 )
 dev.off()
 
-## ------------- Marker gene plots
+## ------------- Marker gene plots, Figure S6
 Markerplts <- function (data, tsne) {
   plts <- list()
     for (i in 1:ncol(data)) {
@@ -187,4 +191,4 @@ p_m <- Markerplts(as.data.frame(as.matrix(t(muraro@data[c('RGS5', 'PDGFRA'), ]))
 p_b <- Markerplts(as.data.frame(as.matrix(t(baron@data[c('RGS5', 'PDGFRA'), ]))), tsneb)
 
 plts1 <- cowplot::plot_grid(plotlist = c(p_m, p_b))
-ggsave(plot=plts1, file = paste0(output.dir, 'Stellate_markers.pdf'), height = 12, width = 15.8)
+ggsave(plot=plts1, file = paste0(output.dir, 'FigureS6.pdf'), height = 12, width = 15.8)

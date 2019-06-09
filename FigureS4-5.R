@@ -38,10 +38,10 @@ boxpl <- function(seurat, type, gns, ncol =2, sub = NULL, col = NULL) {
 col <- c('seagreen4', 'brown', 'darkolivegreen3', 'cyan3',
          'green3', 'blue', 'yellow1',
          'navy', 'orange', 'red2','mediumspringgreen', 'lightyellow3',
-         'purple', 'gray80', 'lemonchiffon3', 'gold3', 'goldenrod2', 'darkorange1', 'saddlebrown', 'deeppink3')
+         'purple', 'gray80', 'lemonchiffon3', 'gold3', 'goldenrod2', 'darkorange1', 'saddlebrown', 'deeppink3', 'black')
 names(col) <- c('CD8 T cell', 'Tumor', 'CD4 T cell', 'Dendritic', 'reg. T cell', 'B cell', 'Resting Fibroblast',
                 'Endothelial', 'Monocyte', 'Mast', 'T cell', 'Splits', 'NK',
-                'Myocyte', 'Unknown', 'CAF', 'Myofibroblast', 'Macrophage', 'Plasma', 'pDC')
+                'Myocyte', 'Unknown', 'CAF', 'Myofibroblast', 'Macrophage', 'Plasma', 'pDC', 'Unassigned')
 gray <- paste0("gray", rev(seq(20, 76, 4)))
 names(gray) <- paste0("Node", 1:15)
 col <- c(col, gray)
@@ -49,9 +49,8 @@ col <- c(col, gray)
 ## ---------------- HN
 # Neck tumor
 load(paste0(data.dir, "HeadNeck_seurat.Rdata"));seurat2 <- seurat
-load(paste0(data.dir, "HN_output.Rdata"))
-info2 <- hn_output; rm(hn_output)
-load(paste0(data.dir, "HN_dend_author_cells.Rdata"))
+load(paste0(data.dir, "HN_output.Rdata")) ## From "Analysis_compare.R"
+info2 <- info; rm(info)
 type <- info2$classification
 alltype <- unique(type)
 no_node <- alltype[!grepl("Node", alltype)]
@@ -68,14 +67,12 @@ tsne1 <- PlotTSNE(info2$classification, seurat2@dr$tsne@cell.embeddings, col =  
 plots <- gridExtra::grid.arrange(tsne1, plot2, plot1, plot7,
                                  layout_matrix = matrix(c(1,2,1,2,1,2,3,4,3,4), ncol = 2, byrow = T))
 
-ggsave(plots, filename = paste0(output.dir, "HN_markers.png"),
+ggsave(plots, filename = paste0(output.dir, "FigureS5.pdf"),
        width = 10.5, height = 7.4, dpi = 800)
 
 ## ---------------- Mel
 load(paste0(data.dir, "Melanoma_seurat.Rdata"))
-load(paste0(data.dir, "Mel_output.Rdata"))
-info <- mel_output; rm(mel_output)
-load(paste0(data.dir, 'Mel_cells.Rdata')) ## Loads macro & fibro
+load(paste0(data.dir, "Mel_output.Rdata")) ## From "Analysis_compare.R"
 tsne <- seurat@dr$tsne@cell.embeddings
 type <- info$classification
 
@@ -112,5 +109,5 @@ plots <- gridExtra::grid.arrange(tsne2, tsne3, plot6, plot3, plot4, plot5,
                                  layout_matrix = matrix(c(1,2,1,2,1,2,3,4,3,4,5,6,5,6), ncol = 2, byrow = T))
 
 
-ggsave(plots, filename = paste0(output.dir, "Mel_markers.png"),
+ggsave(plots, filename = paste0(output.dir, "FigureS4.pdf"),
        width = 10.5, height = 11, dpi = 800)

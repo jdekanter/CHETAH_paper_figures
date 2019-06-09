@@ -15,8 +15,9 @@ meta$celltype <- as.factor(meta$celltype)
 levels(meta$celltype) <- c('Tumor', 'T cell', 'B cell', 'Macrophage', 'Endothelial', 'CAF', 'NK', 'Unknown')
 meta$celltype[meta$celltype == 'Tumor' & meta$malignant == 1] <- 'Unknown'
 ## --- T cell subtypes have been added later, by classifying a separate T cell seurat -- ##
-Tcellsubtypes <- readRDS("Melanoma_T_cell_subtypes.rds")
-meta$celltype[names(Tcellsubtypes)] <- Tcellsubtypes
+## Add them by:
+## melanoma_ct <- readRDS(paste0(data.dir, "Melanoma_celltypes.rds"))
+## meta$celltype <- melanoma_ct
 
 ## Delete duplicated rownames
 data <- data[-c(1:3), ]

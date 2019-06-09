@@ -1,0 +1,262 @@
+RPL18A	60S ribosomal protein L18a		HDA
+RPL18A	60S ribosomal protein L18a		IDA
+RPL18A	60S ribosomal protein L18a		IBA
+ZNF622	Zinc finger protein 622		IBA
+RPL36AL	60S ribosomal protein L36a-like		IBA
+RPL37	60S ribosomal protein L37		HDA
+RPL37	60S ribosomal protein L37		TAS
+RPL37	60S ribosomal protein L37		IBA
+RPS10P5	Putative 40S ribosomal protein S10-like		IBA
+APOD	Apolipoprotein D		ISS
+RPL6	60S ribosomal protein L6		HDA
+RPL6	60S ribosomal protein L6		IDA
+RPL6	60S ribosomal protein L6		IBA
+EIF2A	Eukaryotic translation initiation factor 2A		IBA
+RPS3	40S ribosomal protein S3		HDA
+RPS3	40S ribosomal protein S3		IDA
+RPS3	40S ribosomal protein S3		IBA
+RPL28	60S ribosomal protein L28		HDA
+RPL28	60S ribosomal protein L28		IBA
+RPS9	40S ribosomal protein S9		HDA
+RPS9	40S ribosomal protein S9		IDA
+RPS9	40S ribosomal protein S9		IBA
+RPS10	40S ribosomal protein S10		HDA
+RPS10	40S ribosomal protein S10		IDA
+RPS10	40S ribosomal protein S10		IBA
+PPARGC1A	Peroxisome proliferator-activated receptor gamma coactivator 1-alpha		IEA
+RPL17	60S ribosomal protein L17		HDA
+RPL17	60S ribosomal protein L17		IBA
+J3QQQ9	Uncharacterized protein		IBA
+RPL18	60S ribosomal protein L18		HDA
+RPL18	60S ribosomal protein L18		IDA
+RPL18	60S ribosomal protein L18		IBA
+GEMIN5	Gem-associated protein 5	colocalizes_with	IDA
+RPS17	40S ribosomal protein S17		HDA
+RPS17	40S ribosomal protein S17		IDA
+EIF2AK4	eIF-2-alpha kinase GCN2		ISS
+EIF2AK4	eIF-2-alpha kinase GCN2		IBA
+RPL13A	60S ribosomal protein L13a		HDA
+RPL13A	60S ribosomal protein L13a		IBA
+RPS20	40S ribosomal protein S20		HDA
+RPS20	40S ribosomal protein S20		IDA
+RPS20	40S ribosomal protein S20		IBA
+RPL31	60S ribosomal protein L31		HDA
+RPL31	60S ribosomal protein L31		IDA
+RPL31	60S ribosomal protein L31		IBA
+RPL39	60S ribosomal protein L39		HDA
+RPL39	60S ribosomal protein L39		IDA
+RPL39	60S ribosomal protein L39		TAS
+RPL39	60S ribosomal protein L39		IBA
+RPL30	60S ribosomal protein L30		HDA
+RPL30	60S ribosomal protein L30		TAS
+RPL30	60S ribosomal protein L30		IDA
+RPL30	60S ribosomal protein L30		IBA
+RPS28	40S ribosomal protein S28		HDA
+RPS28	40S ribosomal protein S28		IDA
+RPS28	40S ribosomal protein S28		IDA
+RPS28	40S ribosomal protein S28		IBA
+RPS26	40S ribosomal protein S26		HDA
+RPS26	40S ribosomal protein S26		IDA
+RPS26	40S ribosomal protein S26		IDA
+RPS26	40S ribosomal protein S26		IBA
+RPS24	40S ribosomal protein S24		HDA
+RPS24	40S ribosomal protein S24		IDA
+RPS15	40S ribosomal protein S15		HDA
+RPS15	40S ribosomal protein S15		IDA
+RPS15	40S ribosomal protein S15		IBA
+RPL23	60S ribosomal protein L23		HDA
+RPL23	60S ribosomal protein L23		IBA
+RPL14	60S ribosomal protein L14		HDA
+RPL14	60S ribosomal protein L14		IBA
+RPS11	40S ribosomal protein S11		HDA
+RPS11	40S ribosomal protein S11		IDA
+RPS11	40S ribosomal protein S11		IBA
+RPS13	40S ribosomal protein S13		HDA
+RPS13	40S ribosomal protein S13		IDA
+RPS13	40S ribosomal protein S13		IBA
+RPS18	40S ribosomal protein S18		HDA
+RPS18	40S ribosomal protein S18		IDA
+RPS23	40S ribosomal protein S23		HDA
+RPS23	40S ribosomal protein S23		IDA
+RPS23	40S ribosomal protein S23		IDA
+RPS23	40S ribosomal protein S23		IBA
+RPS14	40S ribosomal protein S14		HDA
+RPS14	40S ribosomal protein S14		IDA
+RPS14	40S ribosomal protein S14		IDA
+RPS14	40S ribosomal protein S14		IBA
+RPS16	40S ribosomal protein S16		HDA
+RPS16	40S ribosomal protein S16		NAS
+RPS16	40S ribosomal protein S16		IDA
+RPS16	40S ribosomal protein S16		IBA
+RPS15A	40S ribosomal protein S15a		HDA
+RPS15A	40S ribosomal protein S15a		IDA
+RPS15A	40S ribosomal protein S15a		IBA
+RPS8	40S ribosomal protein S8		HDA
+RPS8	40S ribosomal protein S8		TAS
+RPS8	40S ribosomal protein S8		IDA
+RPS8	40S ribosomal protein S8		IBA
+RPL39L	60S ribosomal protein L39-like		NAS
+RPL39L	60S ribosomal protein L39-like		IBA
+RPL39P5	Putative 60S ribosomal protein L39-like 5		IBA
+RPS6	40S ribosomal protein S6		NAS
+RPS6	40S ribosomal protein S6		HDA
+RPS6	40S ribosomal protein S6		IDA
+RPL23A	60S ribosomal protein L23a		HDA
+RPL23A	60S ribosomal protein L23a		NAS
+RPL23A	60S ribosomal protein L23a		IBA
+EIF4G1	Eukaryotic translation initiation factor 4 gamma 1	colocalizes_with	TAS
+RPS4X	40S ribosomal protein S4, X isoform		NAS
+RPS4X	40S ribosomal protein S4, X isoform		NAS
+RPS4X	40S ribosomal protein S4, X isoform		IDA
+RPS4X	40S ribosomal protein S4, X isoform		IBA
+RPL36A	60S ribosomal protein L36a		HDA
+RPL36A	60S ribosomal protein L36a		IDA
+RPL36A	60S ribosomal protein L36a		IBA
+LARP4	La-related protein 4	colocalizes_with	IDA
+RPL38	60S ribosomal protein L38		HDA
+RPL38	60S ribosomal protein L38		IDA
+RPL38	60S ribosomal protein L38		IBA
+RPLP0P6	60S acidic ribosomal protein P0-like		IBA
+EIF2AK3	Eukaryotic translation initiation factor 2-alpha kinase 3		IBA
+RPSA	40S ribosomal protein SA		IDA
+RPSA	40S ribosomal protein SA		IBA
+RPS10-NUDT3	RPS10-NUDT3 readthrough (Fragment)		IBA
+RPL26	60S ribosomal protein L26		HDA
+RPL26	60S ribosomal protein L26		IDA
+RPL26	60S ribosomal protein L26		IBA
+RPS3A	40S ribosomal protein S3a		HDA
+RPS3A	40S ribosomal protein S3a		IDA
+RPS4Y2	40S ribosomal protein S4, Y isoform 2		IBA
+RPL13	60S ribosomal protein L13		HDA
+RPL13	60S ribosomal protein L13		TAS
+RPL13	60S ribosomal protein L13		IBA
+RPL4	60S ribosomal protein L4		HDA
+RPL4	60S ribosomal protein L4		IBA
+RPL37A	60S ribosomal protein L37a		HDA
+RPL24	60S ribosomal protein L24		HDA
+RPL24	60S ribosomal protein L24		IDA
+RPL24	60S ribosomal protein L24		IBA
+RACK1	Receptor of activated protein C kinase 1		IBA
+RPS21	40S ribosomal protein S21		HDA
+RPS21	40S ribosomal protein S21		IDA
+RPS21	40S ribosomal protein S21		NAS
+RPS21	40S ribosomal protein S21		IDA
+RPS21	40S ribosomal protein S21		IBA
+RPS27A	Ubiquitin-40S ribosomal protein S27a		HDA
+RPS27A	Ubiquitin-40S ribosomal protein S27a		IDA
+RPS27A	Ubiquitin-40S ribosomal protein S27a		IBA
+RPL3L	60S ribosomal protein L3-like		HDA
+RPL3L	60S ribosomal protein L3-like		IBA
+EIF2D	Eukaryotic translation initiation factor 2D	colocalizes_with	IDA
+EIF2D	Eukaryotic translation initiation factor 2D	colocalizes_with	IBA
+RPS5	40S ribosomal protein S5		HDA
+RPS5	40S ribosomal protein S5		IDA
+RPS5	40S ribosomal protein S5		IBA
+RPL21	60S ribosomal protein L21		HDA
+RPL21	60S ribosomal protein L21		IBA
+RPL5	60S ribosomal protein L5		HDA
+RPL5	60S ribosomal protein L5		IBA
+RPL27A	60S ribosomal protein L27a		HDA
+RPL27A	60S ribosomal protein L27a		IBA
+RPL13AP3	Putative 60S ribosomal protein L13a protein RPL13AP3		IBA
+RPL7L1	60S ribosomal protein L7-like 1		IBA
+MRPL1	39S ribosomal protein L1, mitochondrial		IBA
+FXR2	Fragile X mental retardation syndrome-related protein 2		TAS
+RPL35A	60S ribosomal protein L35a		HDA
+RPL35A	60S ribosomal protein L35a		IBA
+EIF2AK2	Interferon-induced, double-stranded RNA-activated protein kinase		IBA
+RPS7	40S ribosomal protein S7		HDA
+RPS7	40S ribosomal protein S7		NAS
+RPS7	40S ribosomal protein S7		IDA
+RPS7	40S ribosomal protein S7		IBA
+RPL36A-HNRNPH2	RPL36A-HNRNPH2 readthrough		IBA
+RPL9	60S ribosomal protein L9		HDA
+RPL9	60S ribosomal protein L9		IBA
+RPL26L1	60S ribosomal protein L26-like 1		IBA
+RPLP0	60S acidic ribosomal protein P0		HDA
+RPLP0	60S acidic ribosomal protein P0		IDA
+RPLP0	60S acidic ribosomal protein P0		IBA
+RPL10L	60S ribosomal protein L10-like		NAS
+RPL10L	60S ribosomal protein L10-like		IBA
+RPL19	60S ribosomal protein L19		HDA
+RPL19	60S ribosomal protein L19		TAS
+RPL19	60S ribosomal protein L19		IDA
+RPL19	60S ribosomal protein L19		IBA
+DDX3X	ATP-dependent RNA helicase DDX3X	colocalizes_with	IDA
+RPL35	60S ribosomal protein L35		HDA
+RPL35	60S ribosomal protein L35		IBA
+HBA1	Hemoglobin subunit alpha		IDA
+SURF6	Surfeit locus protein 6		IBA
+RPL36	60S ribosomal protein L36		HDA
+RPL36	60S ribosomal protein L36		IDA
+RPL36	60S ribosomal protein L36		IBA
+RPL3	60S ribosomal protein L3		HDA
+RPL3	60S ribosomal protein L3		IBA
+RPL10	60S ribosomal protein L10		HDA
+RPL10	60S ribosomal protein L10		IDA
+RPL10	60S ribosomal protein L10		IDA
+RPL10	60S ribosomal protein L10		IBA
+RPS19	40S ribosomal protein S19		HDA
+RPS19	40S ribosomal protein S19		IDA
+RPS19	40S ribosomal protein S19		IBA
+RPL11	60S ribosomal protein L11		HDA
+RPL11	60S ribosomal protein L11		IDA
+RPL11	60S ribosomal protein L11		IBA
+RPS4Y1	40S ribosomal protein S4, Y isoform 1		NAS
+RPS4Y1	40S ribosomal protein S4, Y isoform 1		IBA
+NUFIP1	Nuclear fragile X mental retardation-interacting protein 1	colocalizes_with	IDA
+RPL34	60S ribosomal protein L34		HDA
+RSL24D1	Probable ribosome biogenesis protein RLP24		IBA
+MCTS1	Malignant T-cell-amplified sequence 1	colocalizes_with	IDA
+MCTS1	Malignant T-cell-amplified sequence 1		IBA
+RPS2	40S ribosomal protein S2		HDA
+RPS2	40S ribosomal protein S2		IDA
+RPS2	40S ribosomal protein S2		IBA
+UBA52	Ubiquitin-60S ribosomal protein L40		IBA
+RPL41	60S ribosomal protein L41		HDA
+RPL41	60S ribosomal protein L41		IDA
+RPL8	60S ribosomal protein L8		HDA
+RPL8	60S ribosomal protein L8		IDA
+RPL8	60S ribosomal protein L8		IBA
+RPL32	60S ribosomal protein L32		HDA
+RPL32	60S ribosomal protein L32		IDA
+RPL32	60S ribosomal protein L32		IBA
+RPL10A	60S ribosomal protein L10a		HDA
+RPL10A	60S ribosomal protein L10a		IDA
+RPL10A	60S ribosomal protein L10a		IBA
+RPS27	40S ribosomal protein S27		HDA
+RPS27	40S ribosomal protein S27		IDA
+RPS27	40S ribosomal protein S27		IBA
+RPS25	40S ribosomal protein S25		HDA
+RPS25	40S ribosomal protein S25		IDA
+RPL29	60S ribosomal protein L29		HDA
+RPL29	60S ribosomal protein L29		IBA
+RPS29	40S ribosomal protein S29		HDA
+RPS29	40S ribosomal protein S29		IDA
+RPS29	40S ribosomal protein S29		IDA
+RPS29	40S ribosomal protein S29		IBA
+RPS27L	40S ribosomal protein S27-like		IBA
+RPL22	60S ribosomal protein L22		HDA
+RPL22	60S ribosomal protein L22		IBA
+RPS12	40S ribosomal protein S12		HDA
+RPS12	40S ribosomal protein S12		NAS
+RPS12	40S ribosomal protein S12		IDA
+RPS12	40S ribosomal protein S12		IBA
+RPL12	60S ribosomal protein L12		HDA
+RPL12	60S ribosomal protein L12		IBA
+RPL17-C18orf32	Protein RPL17-C18orf32		IBA
+RPL7	60S ribosomal protein L7		HDA
+RPL7	60S ribosomal protein L7		IBA
+RPL27	60S ribosomal protein L27		HDA
+RPL27	60S ribosomal protein L27		IBA
+RPL15	60S ribosomal protein L15		HDA
+RPL15	60S ribosomal protein L15		IBA
+RPS26P11	Putative 40S ribosomal protein S26-like 1		IBA
+RPL7A	60S ribosomal protein L7a		HDA
+RPL7A	60S ribosomal protein L7a		IBA
+RPL22L1	60S ribosomal protein L22-like 1		IBA
+RPLP2	60S acidic ribosomal protein P2		HDA
+RPLP2	60S acidic ribosomal protein P2		IDA
+RPLP1	60S acidic ribosomal protein P1		HDA
+RPLP1	60S acidic ribosomal protein P1		IDA
+RPLP1	60S acidic ribosomal protein P1		IBA

@@ -4,7 +4,7 @@ library(Seurat)
 data.dir <- "DEFINE"
 
 ## Load the matrix
-## Download matlab files at: https://figshare.com/s/711d3fb2bd3288c8483 
+## Download matlab files at: https://figshare.com/s/711d3fb2bd3288c8483a 
 data <- read.csv(paste0(data.dir, "ascites_scRNAseq_data_data_matrix.csv"), header = FALSE)
 column <- read.csv(paste0(data.dir, "ascites_scRNAseq_data_column_information.csv"), sep = ";")
 row <- read.csv(paste0(data.dir, "ascites_scRNAseq_data_row_information.csv"), stringsAsFactors = FALSE)

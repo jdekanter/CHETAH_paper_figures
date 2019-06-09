@@ -69,7 +69,7 @@ RunAllMethods <- function(ref, ref_ct, input, input_ct,
         singler = CreateSinglerObject(input, annot = NULL, "Data", min.genes = 500,
                                       technology = "Sequencing", species = "Human", citation = "",
                                       ref.list = list(refSlr), normalize.gene.length = F, variable.genes = "de",
-                                      fine.tune = F, do.signatures = F, clusters = NULL)
+                                      fine.tune = T, do.signatures = F, clusters = NULL)
         singler <- singler$singler[[1]]$SingleR.single$labels[ ,1]
         tm <- toc()
         time$s <- tm$toc - tm$tic
@@ -296,6 +296,14 @@ input <- as.matrix(seurat@raw.data)
 Celldata <- lapply(Celldata, function(x) x[ ,!(colnames(x) %in% colnames(input))]); dim(Celldata[[1]])
 Celldata <- Celldata[unlist(lapply(Celldata, ncol)) >= 10]
 tsne <- seurat@dr$tsne@cell.embeddings
+## Remove ribosomal:
+ribo <- read.table(paste0(data.dir, "ribosomal.txt"), header=F, sep = '\t')
+Celldata <- lapply(names(Celldata), function(x) Celldata[[x]][!rownames(Celldata[[x]]) %in% ribo[,1], ])
+
+## Make and save CHETAH classification:
+info <- CHETAHclassifier(input = input,
+                         ref_cells = Celldata)
+save(info, file = paste0(data.dir, "HN_output.Rdata"))
 
 ## Prepare reference
 ref <- do.call(cbind, Celldata)
@@ -326,6 +334,14 @@ input <- as.matrix(seurat@raw.data)
 Celldata <- lapply(Celldata, function(x) x[ ,!(colnames(x) %in% colnames(input))]); dim(Celldata[[1]])
 Celldata <- Celldata[unlist(lapply(Celldata, ncol)) >= 10]
 tsne <- seurat@dr$tsne@cell.embeddings
+## Remove ribosomal:
+ribo <- read.table(paste0(data.dir, "ribosomal.txt"), header=F, sep = '\t')
+Celldata <- lapply(names(Celldata), function(x) Celldata[[x]][!rownames(Celldata[[x]]) %in% ribo[,1], ])
+
+## Make and save CHETAH classification:
+info <- CHETAHclassifier(input = input,
+                         ref_cells = Celldata)
+save(info, file = paste0(data.dir, "Mel_output.Rdata"))
 
 ## Prepare reference
 ref <- do.call(cbind, Celldata)
@@ -354,6 +370,14 @@ input_ct <- as.vector(seurat@meta.data$celltype)
 names(input_ct) <- rownames(seurat@meta.data)
 input <- as.matrix(seurat@raw.data)
 tsne <- seurat@dr$tsne@cell.embeddings
+## Remove ribosomal:
+ribo <- read.table(paste0(data.dir, "ribosomal.txt"), header=F, sep = '\t')
+Celldata <- lapply(names(Celldata), function(x) Celldata[[x]][!rownames(Celldata[[x]]) %in% ribo[,1], ])
+
+## Make and save CHETAH classification:
+info <- CHETAHclassifier(input = input,
+                         ref_cells = Celldata)
+save(info, file = paste0(data.dir, "OV_output.Rdata"))
 
 ## Prepare reference
 ref <- do.call(cbind, Celldata)
@@ -386,6 +410,10 @@ inputm <- as.matrix(muraro@raw.data)
 inputb <- as.matrix(baron@raw.data)
 inputm <- t(t(inputm)/colSums(inputm) * 10000)
 inputb <- t(t(inputb)/colSums(inputb) * 10000)
+## Remove ribosomal:
+ribo <- read.table(paste0(data.dir, "ribosomal.txt"), header=F, sep = '\t')
+inputb <- inputb[!rownames(inputb) %in% ribo[,1], ]
+inputm <- inputm[!rownames(inputm) %in% ribo[,1], ]
 
 ## Select cells
 mcelt <- mcelt[colnames(muraro@raw.data)]

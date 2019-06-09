@@ -4,6 +4,7 @@ library(Seurat)
 data.dir <- "DEFINE"
 
 ## Load Baron ------------------------------
+## https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE84133 
 celltypes <- vector()
 for(i in 1:4) {
   mat <- read.table(paste0(data.dir, "GSM22307", 56 +i, "_human", i, "_umifm_counts.csv"), 
